@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Chi tiết sự kiện</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./assets/detail-event.css" />
     <link rel="stylesheet" href="./assets/add-delegate.css" />
   </head>
@@ -19,38 +26,63 @@
           <div class="row">
             <div class="card-title">
               <h3>Sự kiện triển lãm 105 năm khởi nghĩa Thái Nguyên</h3>
-              <h4>Thời gian diễn ra: 20/02/2022</h4>
+              <h4><i class="fa fa-calendar"></i> 20/02/2022</h4>
             </div>
-            <!-- <button
-              type="button"
-              class="btn btn-primary btn-lg show-modal"
-              data-toggle="modal"
-              data-target="#myModal"
-            >
-              Thêm đại biểu
-            </button> -->
+
             <div class="popup">
               <button id="test" class="delegate">Thêm đại biểu</button>
               <div class="modal-cont">
                 <div class="modal-box">
                   <span class="close">&times;</span>
-                  <form action="" class="delegate-box">
-                    <h1>Thêm đại biểu</h1>
-                    <label for="">Tên đại biểu</label>
-                    <input type="text" class="name" required />
-                    <label for="">Chức danh</label>
-                    <!-- <form class="form-img"> -->
-                    <input type="file" onchange="preview()" />
-                    <img id="frame" src="" width="100px" height="100px" />
-                    <!-- </form> -->
-                    <label for="delegate">Tỉnh đoàn:</label>
-                    <select name="delegate" id="delegate">
-                      <option value="Hà Nội">Hà Nội</option>
-                      <option value="Thái Nguyên">Thái Nguyên</option>
-                      <option value="Huế">Huế</option>
-                    </select>
+                  <form
+                    method="POST"
+                    class="appointment-form"
+                    id="appointment-form"
+                  >
+                    <h2>Thêm đại biểu</h2>
+                    <div class="form-group-1">
+                      <input
+                        type="text"
+                        name="title"
+                        id="title"
+                        placeholder="Tên đại biểu"
+                        required=""
+                      />
 
-                    <button class="delegate-button">Thêm</button>
+                      <input
+                        type="text"
+                        name="desc"
+                        id="desc"
+                        placeholder="Chức vụ"
+                        required=""
+                      />
+                      <div class="select-list">
+                        <label>
+                          <select>
+                            <option disabled>Tỉnh đoàn</option>
+                            <option>Hà Nội</option>
+                            <option>Lào</option>
+                          </select>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="image-delegate" id="image-delegate">
+                      <input
+                        type="file"
+                        onchange="preview()"
+                        style="margin-bottom: 10px"
+                      />
+                      <img id="frame" src="" width="100px" height="100px" />
+                    </div>
+                    <div class="form-submit">
+                      <input
+                        type="submit"
+                        name="submit"
+                        id="submit"
+                        class="submit"
+                        value="Thêm đại biểu"
+                      />
+                    </div>
                   </form>
                 </div>
               </div>
@@ -58,34 +90,114 @@
             <!-- OKE -->
           </div>
           <hr />
-          <p>
-            🇻🇳🇱🇦 Ngày 15.9, tại Hà Nội, T.Ư Đoàn chủ trì phối hợp Ban Tuyên giáo
-            T.Ư, Ban Đối ngoại T.Ư, Học viện Chính trị Quốc gia HCM, và T.Ư Đoàn
-            Nhân dân Cách mạng Lào tổ chức Hội thảo khoa học chủ đề “Tuổi trẻ
-            Việt Nam - Lào học tập và làm theo tư tưởng của Chủ tịch Hồ Chí Minh
-            và Chủ tịch Kaysone Phomvihane”. 🍀 Tham dự và chủ trì hội thảo có
-            các đồng chí: Lê Hải Bình, Ủy viên dự khuyết T.Ư Đảng, Phó trưởng
-            Ban Tuyên giáo T.Ư; Bùi Quang Huy, Ủy viên dự khuyết T.Ư Đảng, Bí
-            thư thứ nhất T.Ư Đoàn; Monxay Laomuasong, Ủy viên dự khuyết T.Ư Đảng
-            Nhân dân Cách mạng Lào, Bí thư T.Ư Đoàn Thanh niên Nhân dân Cách
-            mạng Lào; Dương Trung Ý, Phó giám đốc Học viện Chính trị quốc gia Hồ
-            Chí Minh. 🇻🇳🇱🇦 Tại hội thảo, các đại biểu tập trung phân tích, đánh
-            giá về giá trị lý luận, thực tiễn trong tư tưởng của Chủ tịch Hồ Chí
-            Minh và Chủ tịch Kaysone Phomvihane, nhất là trong bồi dưỡng thế hệ
-            trẻ và xây dựng mối quan hệ hữu nghị Việt Nam - Lào. 🇻🇳🇱🇦 Các đại
-            biểu cũng nhấn mạnh về tầm quan trọng của việc tổ chức để tuổi trẻ
-            hai nước học tập và làm theo tư tưởng của Chủ tịch Hồ Chí Minh và
-            Chủ tịch Kaysone Phomvihane. Trong đó, cần phát huy vai trò xung
-            kích của thanh niên trong tham gia phát triển kinh tế-xã hội và bảo
-            vệ Tổ quốc, cũng như trách nhiệm của thế hệ trẻ trong việc giữ gìn,
-            vun đắp, phát triển quan hệ hợp tác hữu nghị đặc biệt Việt Nam -
-            Lào.
-          </p>
-          <div class="btn-group">
-            <div class="btn">
-              <a href="">Thêm đại biểu</a>
+          <h3>Tóm tắt sự kiện:</h3>
+          <ul class="content-event">
+            <li>
+              Tea - An aromatic beverage commonly prepared by pouring hot or
+              boiling water over cured leaves of the Camellia sinensis, an
+              evergreen shrub (bush) native to Asia
+            </li>
+            <li>
+              Tea - An aromatic beverage commonly prepared by pouring hot or
+              boiling water over cured leaves of the Camellia sinensis, an
+              evergreen shrub (bush) native to Asia
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, sit?
+            </li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>ádadas</li>
+          </ul>
+          <hr />
+          <div class="">
+            <h3>Danh sách đại biểu tham dự:</h3>
+            <div class="list-delegate">
+              <div class="container">
+                <div class="box">
+                  <div class="top-bar"></div>
+                  <div class="content">
+                    <img
+                      src="data:image/jpeg;base64,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"
+                      alt=""
+                    />
+                    <strong>Tạ Văn Thoại</strong>
+                    <p>Thứ trưởng bộ y tế</p>
+                  </div>
+                  <div class="btn">
+                    <a href="#"
+                      ><i class="fa fa-clipboard" aria-hidden="true"></i>Thông
+                      tin</a
+                    >
+                    <a href="#"
+                      ><i class="fa fa-eye" aria-hidden="true"></i>Xem QR</a
+                    >
+                  </div>
+                </div>
+
+                <div class="box">
+                  <div class="top-bar"></div>
+                  <div class="content">
+                    <img
+                      src="https://scontent.fhan5-11.fna.fbcdn.net/v/t1.15752-9/306713781_1152155042080153_2543182659422579005_n.png?_nc_cat=111&ccb=1-7&_nc_sid=ae9488&_nc_ohc=TtLNoKSY6rsAX-sbUdE&tn=1-jk_p7tW828oF1I&_nc_ht=scontent.fhan5-11.fna&oh=03_AVK1I-X8hRqRhBV8n_RgEkIERXkIGPv13qst9sC0wJzZpw&oe=634C9557"
+                      alt=""
+                    />
+                    <strong>Tạ Văn Thoại</strong>
+                    <p>Thứ trưởng bộ y tế</p>
+                  </div>
+                  <div class="btn">
+                    <a href="#"
+                      ><i class="fa fa-clipboard" aria-hidden="true"></i>Thông
+                      tin</a
+                    >
+                    <a href="#"
+                      ><i class="fa fa-eye" aria-hidden="true"></i>Xem QR</a
+                    >
+                  </div>
+                </div>
+
+                <div class="box">
+                  <div class="top-bar"></div>
+                  <div class="content">
+                    <img
+                      src="https://scontent.fhan5-3.fna.fbcdn.net/v/t39.30808-6/305049425_785853859331272_8581789587648177792_n.jpg?stp=cp6_dst-jpg&_nc_cat=106&ccb=1-7&_nc_sid=0debeb&_nc_ohc=8nsJX0hNrI8AX_vuhdw&_nc_ht=scontent.fhan5-3.fna&oh=00_AT_VbLOIdOsEzZADLQR4Zb9rg6OgYmzuGu8G5Y8QO10C4Q&oe=632CD157"
+                      alt=""
+                    />
+                    <strong>Tạ Văn Thoại</strong>
+                    <p>Thứ trưởng bộ y tế</p>
+                  </div>
+                  <div class="btn">
+                    <a href="#"
+                      ><i class="fa fa-clipboard" aria-hidden="true"></i>Thông
+                      tin</a
+                    >
+                    <a href="#"
+                      ><i class="fa fa-eye" aria-hidden="true"></i>Xem QR</a
+                    >
+                  </div>
+                </div>
+
+                <div class="box">
+                  <div class="top-bar"></div>
+                  <div class="content">
+                    <img
+                      src="https://scontent.fhan5-3.fna.fbcdn.net/v/t39.30808-6/305049425_785853859331272_8581789587648177792_n.jpg?stp=cp6_dst-jpg&_nc_cat=106&ccb=1-7&_nc_sid=0debeb&_nc_ohc=8nsJX0hNrI8AX_vuhdw&_nc_ht=scontent.fhan5-3.fna&oh=00_AT_VbLOIdOsEzZADLQR4Zb9rg6OgYmzuGu8G5Y8QO10C4Q&oe=632CD157"
+                      alt=""
+                    />
+                    <strong>Tạ Văn Thoại</strong>
+                    <p>Thứ trưởng bộ y tế</p>
+                  </div>
+                  <div class="btn">
+                    <a href="#"
+                      ><i class="fa fa-clipboard" aria-hidden="true"></i>Thông
+                      tin</a
+                    >
+                    <a href="#"
+                      ><i class="fa fa-eye" aria-hidden="true"></i>Xem QR</a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
-            <a href=""> Hêt</a>
           </div>
         </div>
       </div>
