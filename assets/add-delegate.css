@@ -1,0 +1,142 @@
+popup {
+    height: 100%;
+    background-color: #5ab8db;
+}
+
+.modal-cont {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.47);
+    top: 0;
+    left: 0;
+     overflow: auto
+}
+
+.modal-box{
+    width: 30%;
+    margin: 30px auto;
+    background-color: white;
+    position: relative;
+}
+
+.modal-box .close {
+    position: absolute;
+    right: 16px;
+    top: 5px;
+    font-size: 25px;
+    font-weight: bolder;  
+    cursor: pointer
+}
+.modal-box .close:hover, .modal-box .close:focus{
+    color: #c6c6c6
+}
+.modal-box img{
+    /* width: 50px;
+    height: 50px;
+    display: block;
+    margin:auto;
+    padding: 14px;*/
+    margin-left: 10px; 
+    width: 100px;
+    height: 100px
+}
+input[type=text], input[type=password]{
+    width: 100%;
+    border: 1px solid #d0d0d0;
+    display: block;
+    padding: 8px;
+    margin: 5px 0;
+    margin-bottom: 10px;
+    
+}
+.modal-box .delegate-button {
+    padding: 10px;
+    font-size: 15px;
+    display: block;
+    width: 100%;
+    color: white;
+    background-color: #29a6d4;
+    margin: 16px 0;
+    
+}
+input[type = checkbox] {
+    margin-right: 2px;
+    vertical-align: baseline; /*no effect for baseline*/
+}
+
+
+
+.modal-box label, .modal-box .delegate-button, .modal-box input, .modal-box select{
+    width: 90%;
+    display: block;
+    margin: 10px auto;
+    
+}
+.modal-box select{
+    width: 95%;
+    margin: 10px auto;
+    height: 30px;
+}
+.modal-box .delegate-button{
+    margin-top: 16px;
+    cursor: pointer
+}
+input[type=checkbox]{
+    display: inline-block;
+    width: auto;
+    margin-left: 16px
+}
+
+.modal-box span{
+    float: right
+}
+.modal-box a{
+    color: #1483be;
+    font-weight: 500;
+    text-decoration: underline
+}
+
+.modal-cont{display: none}
+/*  */
+.modal-box {
+    animation-name: zoom;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    border: 1px solid #b7b7b7;
+    border-radius: 4px;
+    box-shadow: 1px 1px 8px rgba(35, 120, 204, 0.8)
+    
+}
+@keyframes zoom {
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+}
+.delegate{
+    padding: 10px 25px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(113, 113, 113);
+    cursor: pointer
+}
+h1, .delegate {
+    margin: auto;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

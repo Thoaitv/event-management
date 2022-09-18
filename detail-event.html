@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/detail-event.css" />
+    <link rel="stylesheet" href="./assets/add-delegate.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img
+          src="https://scontent.fhan5-9.fna.fbcdn.net/v/t39.30808-6/301133196_380221350961968_4213857021370985510_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Hu8l7hErpFMAX_cGtjc&tn=1-jk_p7tW828oF1I&_nc_ht=scontent.fhan5-9.fna&oh=00_AT9tFvFfI8-tgXTTm8iiCwPnwyUOUo-NY1GqpyVg154Ngg&oe=632BBEB7"
+          alt=""
+        />
+        <div class="card-body">
+          <div class="row">
+            <div class="card-title">
+              <h3>Sự kiện triển lãm 105 năm khởi nghĩa Thái Nguyên</h3>
+              <h4>Thời gian diễn ra: 20/02/2022</h4>
+            </div>
+            <!-- <button
+              type="button"
+              class="btn btn-primary btn-lg show-modal"
+              data-toggle="modal"
+              data-target="#myModal"
+            >
+              Thêm đại biểu
+            </button> -->
+            <div class="popup">
+              <button id="test" class="delegate">Thêm đại biểu</button>
+              <div class="modal-cont">
+                <div class="modal-box">
+                  <span class="close">&times;</span>
+                  <form action="" class="delegate-box">
+                    <h1>Thêm đại biểu</h1>
+                    <label for="">Tên đại biểu</label>
+                    <input type="text" class="name" required />
+                    <label for="">Chức danh</label>
+                    <!-- <form class="form-img"> -->
+                    <input type="file" onchange="preview()" />
+                    <img id="frame" src="" width="100px" height="100px" />
+                    <!-- </form> -->
+                    <label for="delegate">Tỉnh đoàn:</label>
+                    <select name="delegate" id="delegate">
+                      <option value="Hà Nội">Hà Nội</option>
+                      <option value="Thái Nguyên">Thái Nguyên</option>
+                      <option value="Huế">Huế</option>
+                    </select>
+
+                    <button class="delegate-button">Thêm</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- OKE -->
+          </div>
+          <hr />
+          <p>
+            🇻🇳🇱🇦 Ngày 15.9, tại Hà Nội, T.Ư Đoàn chủ trì phối hợp Ban Tuyên giáo
+            T.Ư, Ban Đối ngoại T.Ư, Học viện Chính trị Quốc gia HCM, và T.Ư Đoàn
+            Nhân dân Cách mạng Lào tổ chức Hội thảo khoa học chủ đề “Tuổi trẻ
+            Việt Nam - Lào học tập và làm theo tư tưởng của Chủ tịch Hồ Chí Minh
+            và Chủ tịch Kaysone Phomvihane”. 🍀 Tham dự và chủ trì hội thảo có
+            các đồng chí: Lê Hải Bình, Ủy viên dự khuyết T.Ư Đảng, Phó trưởng
+            Ban Tuyên giáo T.Ư; Bùi Quang Huy, Ủy viên dự khuyết T.Ư Đảng, Bí
+            thư thứ nhất T.Ư Đoàn; Monxay Laomuasong, Ủy viên dự khuyết T.Ư Đảng
+            Nhân dân Cách mạng Lào, Bí thư T.Ư Đoàn Thanh niên Nhân dân Cách
+            mạng Lào; Dương Trung Ý, Phó giám đốc Học viện Chính trị quốc gia Hồ
+            Chí Minh. 🇻🇳🇱🇦 Tại hội thảo, các đại biểu tập trung phân tích, đánh
+            giá về giá trị lý luận, thực tiễn trong tư tưởng của Chủ tịch Hồ Chí
+            Minh và Chủ tịch Kaysone Phomvihane, nhất là trong bồi dưỡng thế hệ
+            trẻ và xây dựng mối quan hệ hữu nghị Việt Nam - Lào. 🇻🇳🇱🇦 Các đại
+            biểu cũng nhấn mạnh về tầm quan trọng của việc tổ chức để tuổi trẻ
+            hai nước học tập và làm theo tư tưởng của Chủ tịch Hồ Chí Minh và
+            Chủ tịch Kaysone Phomvihane. Trong đó, cần phát huy vai trò xung
+            kích của thanh niên trong tham gia phát triển kinh tế-xã hội và bảo
+            vệ Tổ quốc, cũng như trách nhiệm của thế hệ trẻ trong việc giữ gìn,
+            vun đắp, phát triển quan hệ hợp tác hữu nghị đặc biệt Việt Nam -
+            Lào.
+          </p>
+          <div class="btn-group">
+            <div class="btn">
+              <a href="">Thêm đại biểu</a>
+            </div>
+            <a href=""> Hêt</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/popup.js"></script>
+  </body>
+</html>
