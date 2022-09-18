@@ -1,16 +1,13 @@
-.modal-cont {
-  display: none;
-}
-/*  */
+
 .modal-box {
   animation-name: zoom;
   animation-duration: 0.7s;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
-  border: 1px solid #b7b7b7;
   border-radius: 4px;
   box-shadow: 1px 1px 8px rgba(35, 120, 204, 0.8);
 }
+
 @keyframes zoom {
   from {
     transform: scale(0);
@@ -35,6 +32,7 @@
 }
 
 .modal-cont {
+  display: none;
   position: fixed;
   height: 100%;
   width: 100%;
@@ -89,7 +87,7 @@ h1,
 .popup {
   line-height: 1.8;
   color: #fff;
-  background-image: url(../images/body-bg.jpg);
+  /* background-image: url(../images/body-bg.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   -moz-background-size: cover;
@@ -350,23 +348,162 @@ a{
     align-items: center;
     width: 100%;
 }
-.btn a i{
+.btn .view i{
     margin-right: 9px;
 }
-.btn a{
+.btn .view{
     border-radius: 20px;
-    color: #8b8b8b;
+    /* color: #8b8b8b; */
     padding: 8px 20px;
     font-size: 0.9rem;
-}.btn a{
-    /* background-color: #556cb3; */
     border: 1px solid #507bfc;
     color: #000000;
-
+    cursor: pointer;
 }
-.btn a:hover{
+
+.btn .view:hover{
     color: #fff;
     box-shadow: 2px 5px 15px rgba(80,123,252,0.05);
     background-color: #507bfc;
     transition: all ease 0.5s;
+}
+
+
+/* POPUP QR CODE */
+.popup-qr {
+  line-height: 1.8;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  background-position: center center;
+  font-weight: 400;
+  margin: 0;
+}
+
+.modal-cont-qr {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.47);
+  top: 0;
+  left: 0;
+  overflow: auto;
+}
+.modal-box-qr {
+  animation-name: zoom;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  border: 1px solid #b7b7b7;
+  border-radius: 4px;
+  box-shadow: 1px 1px 8px rgba(35, 120, 204, 0.8);
+}
+.modal-box-qr {
+  max-width: 50% ;
+  height: 100%;
+  margin: 30px auto;
+  background-color: white;
+  position: relative;
+}
+.modal-box-qr h3,
+.modal-box-qr h2{
+  margin-left: 30px;
+}
+.modal-box-qr h2{
+  margin-bottom: 0px;
+}
+.modal-box-qr h3{
+  margin-top: 0;
+}
+.modal-box-qr img{
+  width: 100%;
+}
+
+.modal-box-qr .close-qr {
+  position: absolute;
+  right: 16px;
+  top: 5px;
+  font-size: 25px;
+  font-weight: bolder;
+  cursor: pointer;
+  color: black;
+}
+.modal-box .close:hover,
+.modal-box .close:focus {
+  color: #413d3d;
+}
+
+
+/* POPUP QR PROFILE */
+.popup-profile {
+  line-height: 1.8;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  background-position: center center;
+  font-weight: 400;
+  margin: 0;
+}
+
+.modal-cont-profile {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.47);
+  top: 0;
+  left: 0;
+  overflow: auto;
+}
+.modal-box-profile {
+  animation-name: zoom;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  border: 1px solid #b7b7b7;
+  border-radius: 4px;
+  box-shadow: 1px 1px 8px rgba(35, 120, 204, 0.8);
+}
+.modal-box-profile {
+  max-width: 50% ;
+  height: 100%;
+  margin: 30px auto;
+  background-color: white;
+  position: relative;
+}
+.modal-box-profile h3,
+.modal-box-profile h2{
+  margin-left: 30px;
+}
+.modal-box-profile h2{
+  margin-bottom: 0px;
+}
+.modal-box-profile h3{
+  margin-top: 0;
+}
+.modal-box-profile img{
+  width: 100%;
+}
+
+.modal-box-profile .close-profile {
+  position: absolute;
+  right: 16px;
+  top: 5px;
+  font-size: 25px;
+  font-weight: bolder;
+  cursor: pointer;
+  color: black;
+}
+.modal-box .close:hover,
+.modal-box .close:focus {
+  color: #413d3d;
 }

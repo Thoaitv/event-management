@@ -14,6 +14,7 @@
     />
     <link rel="stylesheet" href="./assets/detail-event.css" />
     <link rel="stylesheet" href="./assets/add-delegate.css" />
+    <link rel="stylesheet" href="./assets/view-profile.css" />
   </head>
   <body>
     <div class="container">
@@ -124,79 +125,64 @@
                     <p>Thứ trưởng bộ y tế</p>
                   </div>
                   <div class="btn">
-                    <a href="#"
-                      ><i class="fa fa-clipboard" aria-hidden="true"></i>Thông
-                      tin</a
-                    >
-                    <a href="#"
-                      ><i class="fa fa-eye" aria-hidden="true"></i>Xem QR</a
-                    >
-                  </div>
-                </div>
-
-                <div class="box">
-                  <div class="top-bar"></div>
-                  <div class="content">
-                    <img
-                      src="https://scontent.fhan5-11.fna.fbcdn.net/v/t1.15752-9/306713781_1152155042080153_2543182659422579005_n.png?_nc_cat=111&ccb=1-7&_nc_sid=ae9488&_nc_ohc=TtLNoKSY6rsAX-sbUdE&tn=1-jk_p7tW828oF1I&_nc_ht=scontent.fhan5-11.fna&oh=03_AVK1I-X8hRqRhBV8n_RgEkIERXkIGPv13qst9sC0wJzZpw&oe=634C9557"
-                      alt=""
-                    />
-                    <strong>Tạ Văn Thoại</strong>
-                    <p>Thứ trưởng bộ y tế</p>
-                  </div>
-                  <div class="btn">
-                    <a href="#"
-                      ><i class="fa fa-clipboard" aria-hidden="true"></i>Thông
-                      tin</a
-                    >
-                    <a href="#"
-                      ><i class="fa fa-eye" aria-hidden="true"></i>Xem QR</a
-                    >
-                  </div>
-                </div>
-
-                <div class="box">
-                  <div class="top-bar"></div>
-                  <div class="content">
-                    <img
-                      src="https://scontent.fhan5-3.fna.fbcdn.net/v/t39.30808-6/305049425_785853859331272_8581789587648177792_n.jpg?stp=cp6_dst-jpg&_nc_cat=106&ccb=1-7&_nc_sid=0debeb&_nc_ohc=8nsJX0hNrI8AX_vuhdw&_nc_ht=scontent.fhan5-3.fna&oh=00_AT_VbLOIdOsEzZADLQR4Zb9rg6OgYmzuGu8G5Y8QO10C4Q&oe=632CD157"
-                      alt=""
-                    />
-                    <strong>Tạ Văn Thoại</strong>
-                    <p>Thứ trưởng bộ y tế</p>
-                  </div>
-                  <div class="btn">
-                    <a href="#"
-                      ><i class="fa fa-clipboard" aria-hidden="true"></i>Thông
-                      tin</a
-                    >
-                    <a href="#"
-                      ><i class="fa fa-eye" aria-hidden="true"></i>Xem QR</a
-                    >
-                  </div>
-                </div>
-
-                <div class="box">
-                  <div class="top-bar"></div>
-                  <div class="content">
-                    <img
-                      src="https://scontent.fhan5-3.fna.fbcdn.net/v/t39.30808-6/305049425_785853859331272_8581789587648177792_n.jpg?stp=cp6_dst-jpg&_nc_cat=106&ccb=1-7&_nc_sid=0debeb&_nc_ohc=8nsJX0hNrI8AX_vuhdw&_nc_ht=scontent.fhan5-3.fna&oh=00_AT_VbLOIdOsEzZADLQR4Zb9rg6OgYmzuGu8G5Y8QO10C4Q&oe=632CD157"
-                      alt=""
-                    />
-                    <strong>Tạ Văn Thoại</strong>
-                    <p>Thứ trưởng bộ y tế</p>
-                  </div>
-                  <div class="btn">
-                    <a href="#"
-                      ><i class="fa fa-clipboard" aria-hidden="true"></i>Thông
-                      tin</a
-                    >
-                    <a href="#"
-                      ><i class="fa fa-eye" aria-hidden="true"></i>Xem QR</a
-                    >
+                    <div class="btn-profile">
+                      <div class="view-profile view">
+                        <i class="fa fa-clipboard" aria-hidden="true"></i>Thông
+                        tin
+                      </div>
+                    </div>
+                    <div class="btn-qr">
+                      <div class="view-qr view">
+                        <i class="fa fa-eye" aria-hidden="true"></i>Xem QR
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
+
+              <!-- //POPUP QR -->
+              <div class="popup-view">
+                <!-- <button id="test" class="delegate">Thêm đại biểu</button> -->
+                <div class="modal-cont-qr">
+                  <div class="modal-box-qr">
+                    <span class="close-qr">&times;</span>
+                    <h1>Mã QR của Thoại</h1>
+                    <img
+                      src="https://printgo.vn/uploads/media/790919/tao-ma-qr-code-san-pham-1_1620927223.jpg"
+                      alt=""
+                    />
+                    <h2>Tên: Thoại</h2>
+                    <h3>ID:123</h3>
+                  </div>
+                </div>
+              </div>
+              <!-- //END POPUP QR -->
+
+              <!-- //POPUP Profile -->
+              <div class="popup-view">
+                <div class="modal-cont-profile">
+                  <div class="modal-box-profile">
+                    <span class="close-profile">&times;</span>
+                    <!-- <h1>Thông tin đại biểu</h1> -->
+                    <article class="material-card Red">
+                      <h2>
+                        <span>Tạ Văn Thoại</span>
+                        <strong>
+                          <i class="fa fa-fw fa-star"></i>
+                          Phó chủ tịch
+                        </strong>
+                      </h2>
+                      <div class="img-container">
+                        <img
+                          class="img-responsive"
+                          src="https://scontent.fhan5-11.fna.fbcdn.net/v/t1.15752-9/306713781_1152155042080153_2543182659422579005_n.png?_nc_cat=111&ccb=1-7&_nc_sid=ae9488&_nc_ohc=TtLNoKSY6rsAX-sbUdE&tn=1-jk_p7tW828oF1I&_nc_ht=scontent.fhan5-11.fna&oh=03_AVK1I-X8hRqRhBV8n_RgEkIERXkIGPv13qst9sC0wJzZpw&oe=634C9557"
+                        />
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+              <!-- //END POPUP Profile -->
             </div>
           </div>
         </div>
