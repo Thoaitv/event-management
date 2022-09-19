@@ -73,25 +73,3 @@ window.onclick = function (e) {
 }
 
 
-// ADD EVENT
-
-let closeBtnAddEvent = document.getElementsByClassName('close-add-event')[0]
-let modalAddEvent = document.getElementsByClassName('modal-cont-add-event')[0]
-let btnAddEvent = document.getElementsByClassName('btn-add-event')[0];
-// let container = document.getElementsByClassName('modal-cont-profile')[0];
-//close
-function addEvent() {
-    modalAddEvent.style.display = "none";
-}
-closeBtnAddEvent.onclick = addEvent;
-console.log(container);
-btnAddEvent.onclick = function () {
-    console.log("A")
-    modalAddEvent.style.display = "block";
-
-}
-window.onclick = function (e) {
-    if (e.target.className === 'modal-cont-add-event') {
-        e.target.style.display = 'none';
-    }
-}
