@@ -11,7 +11,7 @@ function addEvent() {
 }
 closeBtnAddEvent.onclick = addEvent;
 btnAddEvent.onclick = function () {
-    console.log('HERE');
+    // console.log('HERE');
     modalAddEvent.style.display = 'block';
 };
 window.onclick = function (e) {

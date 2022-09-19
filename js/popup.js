@@ -25,6 +25,16 @@ window.onclick = function (e) {
 function preview() {
     frame.src = URL.createObjectURL(event.target.files[0]);
 }
+let frame1 = document.getElementById('frame1')
+console.log(frame1);
+function preview1() {
+    console.log(frame.src)
+    frame1.src = URL.createObjectURL(event.target.files[0]);
+}
+function preview2() {
+    console.log(frame)
+    frame.src = URL.createObjectURL(event.target.files[0]);
+}
 
 // QR
 let closeBtnQR = document.getElementsByClassName('close-qr')[0]
@@ -61,7 +71,7 @@ function profile() {
 closeBtnProfile.onclick = profile;
 console.log(container);
 btnProfile.onclick = function () {
-    console.log(modalProfile.style)
+    // console.log(modalProfile.style)
     container.style.backgroundColor = "white"
     modalProfile.style.display = "block";
 
@@ -73,3 +83,12 @@ window.onclick = function (e) {
 }
 
 
+
+function previewMultiple(event) {
+    var saida = document.getElementById("adicionafoto");
+    var quantos = saida.files.length;
+    for (i = 0; i < quantos; i++) {
+        var urls = URL.createObjectURL(event.target.files[i]);
+        document.getElementById("galeria").innerHTML += '<img src="' + urls + '">';
+    }
+}

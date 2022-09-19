@@ -16,7 +16,7 @@ body {
 }
 
 .card {
-  width: 1000px;
+  width: 65vw;
   height: 100%;
   border-radius: 5px;
   padding-bottom: 3rem;
@@ -27,7 +27,7 @@ body {
 }
 
 .card img {
-  width: 1000px;
+  width: 65vw;
   height: 600px;
 }
 

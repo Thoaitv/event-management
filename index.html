@@ -133,26 +133,50 @@
                 required=""
               />
             </div>
-            <div class="image-delegate-event" id="image-delegate-event">
+            <!-- <div class="image-delegate-event" id="image-delegate-event">
               <input
                 type="file"
-                onchange="preview()"
+                onchange="preview1()"
                 style="margin-bottom: 10px"
               />
-              <img id="frame" src="" width="100px" height="100px" />
+              <img
+                id="frame1"
+                name="frame1"
+                src=""
+                width="100px"
+                height="100px"
+              />
             </div>
             <div class="image-delegate-event" id="image-delegate-event">
               <input
                 type="file"
-                onchange="preview()"
+                onchange="preview2()"
                 style="margin-bottom: 10px"
               />
               <img id="frame" src="" width="100px" height="100px" />
-            </div>
+            </div> -->
 
+            <div
+              class="image-delegate-event date"
+              id="image-delegate-event"
+              style="display: block; width: 100%"
+            >
+              <input
+                type="datetime-local"
+                id="birthdaytime"
+                name="birthdaytime"
+              />
+            </div>
+            <input
+              type="file"
+              multiple
+              onchange="previewMultiple(event)"
+              id="adicionafoto"
+            />
+            <div id="galeria"></div>
             <textarea
               name="myeditor"
-              placeholder="Product Details"
+              placeholder="Mô tả"
               class="form-control"
               rows="12"
               cols="50"
@@ -164,6 +188,7 @@
                 id="submit"
                 class="submit"
                 value="Thêm sự kiện"
+                style="font-size: 25px"
               />
             </div>
           </form>
@@ -179,6 +204,13 @@
       window.onload = function () {
         CKEDITOR.replace('myeditor');
       };
+
+      // http://jsfiddle.net/abonzer/ghdo7xjw/4/
+
+      //
+      // function preview1() {
+      //   frame.src = URL.createObjectURL(event.target.files[0]);
+      // }
     </script>
   </body>
 </html>

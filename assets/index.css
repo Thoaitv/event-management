@@ -1,9 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald|Roboto|Slabo+27px);
 @import 'bourbon';
 body {
-  background: #ff00cc;  
-background: -webkit-linear-gradient(to right, #333399, #ff00cc); 
-background: linear-gradient(to right, #333399, #ff00cc); 
+  background-color: #FA8BFF;
+  background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+  
+
 }
 h1 {
   font-size: 32px;
@@ -14,6 +15,7 @@ h1 {
 a, button{
   text-decoration: none;
   color: black;
+
 }
 .wrapper {
   padding: 15px;
@@ -269,6 +271,7 @@ a, button{
 
 .modal-box-event {
   width: 50%;
+  /* height: 100vh; */
   margin: 30px auto;
   background-color: white;
   position: relative;
@@ -319,8 +322,10 @@ h2 {
 input,
 select {
   width: 100%;
+  font-size: 20px;
   display: block;
   border: none;
+  outline: none;
   border-bottom: 2px solid #ebebeb;
   padding: 5px 0;
   color: #222;
@@ -419,4 +424,21 @@ a{
 
 {
   display: none;
+}
+.image-delegate-event.date input{
+width: 50%;
+}
+
+#galeria{
+  display: flex;
+  margin-bottom: 20px;
+}
+#galeria img{
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  opacity: 85%;
+  margin-right: 15px;
+
 }
