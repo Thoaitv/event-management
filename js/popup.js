@@ -23,6 +23,7 @@ window.onclick = function (e) {
     }
 }
 function preview() {
+    document.getElementById('frame').style.display = "block";
     frame.src = URL.createObjectURL(event.target.files[0]);
 }
 let frame1 = document.getElementById('frame1')
@@ -51,7 +52,6 @@ closeBtnQR.onclick = qr;
 
 btnQr.onclick = function () {
     console.log(modalQR.style.display)
-
     modalQR.style.display = "block";
 }
 window.onclick = function (e) {

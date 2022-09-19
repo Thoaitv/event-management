@@ -1,7 +1,8 @@
 .material-card{
-    width: 30%;
+    width: 40%;
     height: auto;
     margin: 0 auto;
+    text-align: center;
 }
 .img-container img{
     width: 100%;
