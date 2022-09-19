@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Events</title>
     <link rel="stylesheet" href="./assets/index.css" />
-    <link rel="stylesheet" href="./assets/CKeditor.css" />
 
     <link
       rel="stylesheet"
@@ -116,16 +115,15 @@
     </div>
     <!-- POPUP EVENT -->
     <div class="popup-event">
-      <!-- <button id="test" class="delegate">Thêm Sự k</button> -->
       <div class="modal-cont-event">
         <div class="modal-box-event">
           <span class="close-event">&times;</span>
           <form
             method="POST"
             class="appointment-form-event"
-            id="appointment-form"
+            id="appointment-form-event"
           >
-            <h2>Sự kiện</h2>
+            <h2>Thêm sự kiện</h2>
             <div class="form-group-1">
               <input
                 type="text"
@@ -134,254 +132,8 @@
                 placeholder="Tên sự kiện"
                 required=""
               />
-
-              <div>
-                <div class="wp-webdeasy-comment-editor">
-                  <div class="toolbar">
-                    <div class="line">
-                      <div class="box"></div>
-                        <span
-                          class="editor-btn icon smaller"
-                          data-action="bold"
-                          data-tag-name="b"
-                          title="Bold"
-                        >
-                          <img
-                            src="https://img.icons8.com/fluency-systems-filled/48/000000/bold.png"
-                          />
-                        </span>
-                        <span
-                          class="editor-btn icon smaller"
-                          data-action="italic"
-                          data-tag-name="i"
-                          title="Italic"
-                        >
-                          <img
-                            src="https://img.icons8.com/fluency-systems-filled/48/000000/italic.png"
-                          />
-                        </span>
-                        <span
-                          class="editor-btn icon smaller"
-                          data-action="underline"
-                          data-tag-name="u"
-                          title="Underline"
-                        >
-                          <img
-                            src="https://img.icons8.com/fluency-systems-filled/48/000000/underline.png"
-                          />
-                        </span>
-                        <span
-                          class="editor-btn icon smaller"
-                          data-action="strikeThrough"
-                          data-tag-name="strike"
-                          title="Strike through"
-                        >
-                          <img
-                            src="https://img.icons8.com/fluency-systems-filled/30/000000/strikethrough.png"
-                          />
-                        </span>
-                      </div>
-
-                      <div class="box">
-                        <span class="editor-btn icon has-submenu">
-                          <img
-                            src="https://img.icons8.com/fluency-systems-filled/48/000000/align-left.png"
-                          />
-                          <div class="submenu">
-                            <span
-                              class="editor-btn icon"
-                              data-action="justifyLeft"
-                              data-style="textAlign:left"
-                              title="Justify left"
-                            >
-                              <img
-                                src="https://img.icons8.com/fluency-systems-filled/48/000000/align-left.png"
-                              />
-                            </span>
-                            <span
-                              class="editor-btn icon"
-                              data-action="justifyCenter"
-                              data-style="textAlign:center"
-                              title="Justify center"
-                            >
-                              <img
-                                src="https://img.icons8.com/fluency-systems-filled/48/000000/align-center.png"
-                              />
-                            </span>
-                            <span
-                              class="editor-btn icon"
-                              data-action="justifyRight"
-                              data-style="textAlign:right"
-                              title="Justify right"
-                            >
-                              <img
-                                src="https://img.icons8.com/fluency-systems-filled/48/000000/align-right.png"
-                              />
-                            </span>
-                            <span
-                              class="editor-btn icon"
-                              data-action="formatBlock"
-                              data-style="textAlign:justify"
-                              title="Justify block"
-                            >
-                              <img
-                                src="https://img.icons8.com/fluency-systems-filled/48/000000/align-justify.png"
-                              />
-                            </span>
-                          </div>
-                        </span>
-                        <span
-                          class="editor-btn icon"
-                          data-action="insertOrderedList"
-                          data-tag-name="ol"
-                          title="Insert ordered list"
-                        >
-                          <img
-                            src="https://img.icons8.com/fluency-systems-filled/48/000000/numbered-list.png"
-                          />
-                        </span>
-                        <span
-                          class="editor-btn icon"
-                          data-action="insertUnorderedList"
-                          data-tag-name="ul"
-                          title="Insert unordered list"
-                        >
-                          <img
-                            src="https://img.icons8.com/fluency-systems-filled/48/000000/bulleted-list.png"
-                          />
-                        </span>
-                        <span
-                          class="editor-btn icon"
-                          data-action="outdent"
-                          title="Outdent"
-                          data-required-tag="li"
-                        >
-                          <img
-                            src="https://img.icons8.com/fluency-systems-filled/48/000000/outdent.png"
-                          />
-                        </span>
-                        <span
-                          class="editor-btn icon"
-                          data-action="indent"
-                          title="Indent"
-                        >
-                          <img
-                            src="https://img.icons8.com/fluency-systems-filled/48/000000/indent.png"
-                          />
-                        </span>
-                      </div>
-                      <div class="box">
-                        <span
-                          class="editor-btn icon"
-                          data-action="insertHorizontalRule"
-                          title="Insert horizontal rule"
-                        >
-                          <img
-                            src="https://img.icons8.com/fluency-systems-filled/48/000000/horizontal-line.png"
-                          />
-                        </span>
-                      </div>
-                    </div>
-                    <div class="line">
-                      <div class="box">
-                        <span
-                          class="editor-btn icon smaller"
-                          data-action="undo"
-                          title="Undo"
-                        >
-                          <img
-                            src="https://img.icons8.com/fluency-systems-filled/48/000000/undo--v1.png"
-                          />
-                        </span>
-                        <span
-                          class="editor-btn icon"
-                          data-action="removeFormat"
-                          title="Remove format"
-                        >
-                          <img
-                            src="https://img.icons8.com/fluency-systems-filled/48/000000/remove-format.png"
-                          />
-                        </span>
-                      </div>
-
-                      <div class="box">
-                        <span
-                          class="editor-btn icon smaller"
-                          data-action="createLink"
-                          title="Insert Link"
-                        >
-                          <img
-                            src="https://img.icons8.com/fluency-systems-filled/48/000000/add-link.png"
-                          />
-                        </span>
-                        <span
-                          class="editor-btn icon smaller"
-                          data-action="unlink"
-                          data-tag-name="a"
-                          title="Unlink"
-                        >
-                          <img
-                            src="https://img.icons8.com/fluency-systems-filled/48/000000/delete-link.png"
-                          />
-                        </span>
-                      </div>
-
-                      <div class="box">
-                        <span
-                          class="editor-btn icon"
-                          data-action="toggle-view"
-                          title="Show HTML-Code"
-                        >
-                          <img
-                            src="https://img.icons8.com/fluency-systems-filled/48/000000/source-code.png"
-                          />
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="content-area">
-                    <div class="visuell-view" contenteditable>
-                      <p style="text-align: center">
-                      adsasds
-                      </p>
-                    </div>
-                    <textarea class="html-view"></textarea>
-                  </div>
-                </div>
-
-                <div class="modal">
-                  <div class="modal-bg"></div>
-                  <div class="modal-wrapper">
-                    <div class="close">✖</div>
-                    <div class="modal-content" id="modalCreateLink">
-                      <h3>Insert Link</h3>
-                      <input
-                        type="text"
-                        id="linkValue"
-                        placeholder="Link (example: https://webdeasy.de/)"
-                      />
-                      <div class="row">
-                        <input type="checkbox" id="new-tab" />
-                        <label for="new-tab">Open in new Tab?</label>
-                      </div>
-                      <button class="done">Done</button>
-                    </div>
-                  </div>
-                </div>
-
-                
-              </div>
-              <!-- <div class="select-list">
-                <label>
-                  <select>
-                    <option disabled>Tỉnh đoàn</option>
-                    <option>Hà Nội</option>
-                    <option>Lào</option>
-                  </select>
-                </label>
-              </div> -->
             </div>
-            <div class="image-delegate" id="image-delegate">
+            <div class="image-delegate-event" id="image-delegate-event">
               <input
                 type="file"
                 onchange="preview()"
@@ -389,14 +141,14 @@
               />
               <img id="frame" src="" width="100px" height="100px" />
             </div>
-            <div class="image-delegate" id="image-delegate">
-              <input
-                type="file"
-                onchange="preview()"
-                style="margin-bottom: 10px"
-              />
-              <img id="frame" src="" width="100px" height="100px" />
-            </div>
+
+            <textarea
+              name="myeditor"
+              placeholder="Product Details"
+              class="form-control"
+              rows="12"
+              cols="50"
+            ></textarea>
             <div class="form-submit">
               <input
                 type="submit"
@@ -410,10 +162,15 @@
         </div>
       </div>
     </div>
-
+    <script src="https://cdn.ckeditor.com/4.11.1/standard/ckeditor.js"></script>
     <!-- END POPUP EVENT -->
     <script src="./js/add-event.js"></script>
-    <script src="./ckeditor/"></script>
-    <script src="./js/CKeditor.js"></script>
+    <script src="./js/popup.js"></script>
+    <script type="text/javascript" src="./ckeditor/ckeditor.js"></script>
+    <script>
+      window.onload = function () {
+        CKEDITOR.replace('myeditor');
+      };
+    </script>
   </body>
 </html>

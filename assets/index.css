@@ -162,7 +162,7 @@ a, button{
   background-color: inherit;
 }
 
-
+/* END HEADER */
 
 
 
@@ -236,8 +236,7 @@ a, button{
 }
 
 
-/* POPUP QR EVENTS */
-
+/* POPUP EVENT */
 .modal-box-event {
   animation-name: zoom;
   animation-duration: 0.7s;
@@ -255,7 +254,6 @@ a, button{
     transform: scale(1);
   }
 }
-
 .modal-cont-event {
   display: none;
   position: fixed;
@@ -268,7 +266,7 @@ a, button{
 }
 
 .modal-box-event {
-  width: 30%;
+  width: 50%;
   margin: 30px auto;
   background-color: white;
   position: relative;
@@ -287,7 +285,6 @@ a, button{
 .modal-box-event .close-event:focus {
   color: #413d3d;
 }
-
 .popup-event {
   line-height: 1.8;
   color: #fff;
@@ -376,10 +373,10 @@ select::-ms-expand {
   display: none;
 }
 
-#image-delegate{
+#image-delegate-event{
     width: 100%;
 }
-#image-delegate img{
+#image-delegate-event img{
     width: 100px;
     height: 100px;
 }
@@ -407,4 +404,15 @@ select::-ms-expand {
 
 a{
     text-decoration: none;
+}
+#cke_11,
+#cke_19,
+#cke_21,
+#cke_25,
+#cke_30,
+#cke_32,
+#cke_46
+
+{
+  display: none;
 }
