@@ -6,23 +6,7 @@
 .img-container img{
     width: 100%;
 }
-.material-card h2 {
-    position: absolute;
-    top: calc(60% - 16px);
-    left: 0;
-    width: 50%;
-    padding: 10px 16px;
-    color: #fff;
-    font-size: 1.4em;
-    line-height: 1.6em;
-    margin: 0;
-    z-index: 10;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -ms-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s;
-}
+
 .material-card h2 span {
     display: block;
 }
@@ -60,12 +44,6 @@
     bottom: -16px;
 }
 
-
-
-.material-card.Red h2{
-   background-color: #F44336;
-   width: 100%;
-}
 .material-card.Red h2:before {
    border-top-color: transparent;
    border-right-color: #B71C1C;
@@ -78,4 +56,18 @@
    border-right-color: #F44336;
    border-bottom-color: transparent;
    border-left-color: transparent;
-}
+}.img-container{
+    position: relative;
+  }
+  .material-card.Red h2{
+    background-color: #F44336;
+   width: 100%;
+    position: absolute;
+    bottom: 5;
+    color: #fff;
+    margin-top: -10px;
+ 
+  }
+  .material-card.Red h2 span, .material-card.Red h2 strong{
+    padding: 3px 30px;
+  }
