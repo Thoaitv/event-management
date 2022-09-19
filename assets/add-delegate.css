@@ -404,7 +404,7 @@ a{
   box-shadow: 1px 1px 8px rgba(35, 120, 204, 0.8);
 }
 .modal-box-qr {
-  max-width: 50% ;
+  max-width: 35% ;
   height: 100%;
   margin: 30px auto;
   background-color: white;
