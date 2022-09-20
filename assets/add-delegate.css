@@ -532,30 +532,3 @@ a {
 }
 
 
-
-/* POPUP FULL SCREEN */
-.popup-full-screen {
-  line-height: 1.8;
-  color: #fff;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  -ms-background-size: cover;
-  background-position: center center;
-  font-weight: 400;
-  margin: 0;
-}
-
-.modal-cont-full-screen {
-  display: none;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.47);
-  top: 0;
-  left: 0;
-  overflow: auto;
-}
-

@@ -104,6 +104,8 @@ body {
   color: #fff;
   text-decoration: none;
 }
+/* POPUP FULL SCREEN */
+
 
 .modal-box-full-screen {
   animation-name: zoom;
@@ -115,7 +117,7 @@ body {
   /* box-shadow: 1px 1px 8px rgba(35, 120, 204, 0.8); */
 }
 .modal-box-full-screen {
-  max-width: 65%;
+  max-width: 80%;
   height: 50%;
   margin: 30px auto;
   background-color: white;
@@ -132,7 +134,7 @@ body {
   margin-top: 0;
 }
 .modal-box-full-screen img {
-  width: 100%;
+  width: 90%;
 }
 .material-card .img-container-full-screen {
   overflow: hidden;
@@ -160,54 +162,32 @@ body {
 }
 .modal-box-full-screen .img-container-full-screen img{
   width: 100%;
-  height: 100%;
+  height: 85%;
 }
 
-/* .material-card-full-screen {
-  position: relative;
-  height: 0;
-  padding-bottom: calc(100% - 0px);
-  margin-bottom: 6.6em;
-}
-.material-card-full-screen h2 {
-  position: absolute;
-  top: calc(100% - 16px);
-  left: 0;
-  width: 100%;
-  padding: 10px 16px;
+
+.popup-full-screen {
+  line-height: 1.8;
   color: #fff;
-  font-size: 1.4em;
-  line-height: 1.6em;
-  margin: 0;
-  z-index: 10;
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -ms-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-}
-.material-card-full-screen h2 span {
-  display: block;
-}
-.material-card-full-screen h2 strong {
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  background-position: center center;
   font-weight: 400;
-  display: block;
-  font-size: .8em;
+  margin: 0;
 }
-.material-card-full-screen h2:before, .material-card-full-screen h2:after {
-  content: ' ';
-  position: absolute;
+
+.modal-cont-full-screen {
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.47);
+  top: 0;
   left: 0;
-  top: -16px;
-  width: 0;
-  border: 8px solid;
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -ms-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
+  overflow: auto;
 }
-.material-card-full-screen h2:after {
-  top: auto;
-  bottom: 0;
-} */
+.modal-box-full-screen 

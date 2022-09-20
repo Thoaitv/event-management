@@ -81,7 +81,7 @@ window.onclick = function (e) {
 // let closeBtnFullScreen = document.getElementsByClassName('close-full-screen')[0]
 let modalFullScreen = document.getElementsByClassName('modal-cont-full-screen')[0]
 let btnFullScreen = document.getElementsByClassName('btn-full-screen')[0];
-let containerFullScreen = document.getElementsByClassName('modal-cont-full-screen')[0];
+// let containerFullScreen = document.getElementsByClassName('modal-cont-full-screen')[0];
 function fullScreen() {
     modalFullScreen.style.display = "none";
 }
@@ -90,7 +90,7 @@ console.log(container.style);
 // closeBtnFullScreen.onclick = fullScreen;
 btnFullScreen.onclick = function () {
     console.log("modalProfile.style")
-    containerFullScreen.style.backgroundColor = "white"
+    modalFullScreen.style.backgroundColor = "white"
     modalFullScreen.style.display = "block";
 
 }
