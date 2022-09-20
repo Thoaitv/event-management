@@ -16,7 +16,7 @@ body {
 }
 
 .card {
-  width: 65vw;
+  width: 66vw;
   height: 100%;
   border-radius: 5px;
   padding-bottom: 3rem;
@@ -104,3 +104,110 @@ body {
   color: #fff;
   text-decoration: none;
 }
+
+.modal-box-full-screen {
+  animation-name: zoom;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  /* border: 1px solid #b7b7b7; */
+  border-radius: 4px;
+  /* box-shadow: 1px 1px 8px rgba(35, 120, 204, 0.8); */
+}
+.modal-box-full-screen {
+  max-width: 65%;
+  height: 50%;
+  margin: 30px auto;
+  background-color: white;
+  position: relative;
+}
+.modal-box-full-screen h3,
+.modal-box-full-screen h2 {
+  margin-left: 30px;
+}
+.modal-box-full-screen h2 {
+  margin-bottom: 0px;
+}
+.modal-box-full-screen h3 {
+  margin-top: 0;
+}
+.modal-box-full-screen img {
+  width: 100%;
+}
+.material-card .img-container-full-screen {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1250px;
+  height: 750px;
+  z-index: 3;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+.material-card.mc-active .img-container-full-screen {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  /* left: 0;
+  top: 12px; */
+  /* width: 60px; */
+  /* height: 60px; */
+  z-index: 20;
+}
+.modal-box-full-screen .img-container-full-screen img{
+  width: 100%;
+  height: 100%;
+}
+
+/* .material-card-full-screen {
+  position: relative;
+  height: 0;
+  padding-bottom: calc(100% - 0px);
+  margin-bottom: 6.6em;
+}
+.material-card-full-screen h2 {
+  position: absolute;
+  top: calc(100% - 16px);
+  left: 0;
+  width: 100%;
+  padding: 10px 16px;
+  color: #fff;
+  font-size: 1.4em;
+  line-height: 1.6em;
+  margin: 0;
+  z-index: 10;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+.material-card-full-screen h2 span {
+  display: block;
+}
+.material-card-full-screen h2 strong {
+  font-weight: 400;
+  display: block;
+  font-size: .8em;
+}
+.material-card-full-screen h2:before, .material-card-full-screen h2:after {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  top: -16px;
+  width: 0;
+  border: 8px solid;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+.material-card-full-screen h2:after {
+  top: auto;
+  bottom: 0;
+} */
